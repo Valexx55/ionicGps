@@ -1,0 +1,7 @@
+{
+  "name": "ionicGps",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

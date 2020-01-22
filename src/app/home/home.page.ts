@@ -37,7 +37,7 @@ export class HomePage {
                 this.ubicacion = "GPS PODEMOS PEDIR";
                 this.locationAccuracy.request(this.locationAccuracy.REQUEST_PRIORITY_HIGH_ACCURACY).then(
                   (ok) => { this.ubicacion= ok.code + " "+ ok.message; this.mostrarUbicacionActual(); this.programarSeguimientoUbicacion(); },
-                  error => this.ubicacion = "Error al pedir UBC" //console.log('Error requesting location permissions', error)
+                  error => this.ubicacion = "Permiso denegado"
                 );
               } else {
                 this.ubicacion = "NO podemos pedir UBC";
